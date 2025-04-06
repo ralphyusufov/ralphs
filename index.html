@@ -11,6 +11,7 @@
       color: #6b4e3d;
       text-align: center;
       padding: 40px;
+      margin: 0; /* Убирает отступы по умолчанию */
     }
     .logo {
       max-width: 300px; /* Увеличено в 2 раза */
@@ -31,18 +32,25 @@
       padding: 20px 0;
       font-size: 1em;
       text-align: center;
+      width: 100%; /* Футер растягивается на всю ширину */
+      position: relative;
+      bottom: 0;
+    }
+    footer p:last-child {
+      font-size: 0.8em; /* Меньший размер шрифта для текста с правами */
+      margin-top: 5px;
     }
   </style>
 </head>
 <body>
   <img src="2.png" alt="Ralph's Bake Shop Logo" class="logo" />
-  <h1>OUR SWEET NEW SITE IS BAKING!</h1>
+  <h1>Our Sweet New Site is Baking!</h1>
   <p>We're working on something delicious!</p>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Ralph's Bake Shop. All rights reserved.</p>
     <p>Brooklyn, NY</p>
+    <p>&copy; 2025 Ralph's Bake Shop. All rights reserved.</p>
   </footer>
 </body>
 </html>
